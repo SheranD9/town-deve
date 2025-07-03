@@ -9,16 +9,13 @@
       href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css"
     />
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="./css/style.css" />
-
   </head>
   <body>
-
     <header class="header">
       <div class="header__inner">
         <h1 class="header__title"></h1>
@@ -34,9 +31,9 @@
       </div>
     </header>
     <main class="main">
-
-        <section class="FirstView">
-          <div class="FirstView__inner">
+      <section class="FirstView">
+        <div class="FirstView__inner">
+          <div class="scroll-indicator">
             <a href="#sectionOne" class="scrollBtn">
               <svg class="scroll-indicator__text" viewBox="0 0 100 100">
                 <path
@@ -53,275 +50,255 @@
               <span class="scroll-indicator__arrow">↓</span>
             </a>
           </div>
+        </div>
+      </section>
 
-        </section>
+      <section class="sectionOne" id="sectionOne">
+        <div class="sectionOne__inner">
+          <h1 class="sectionOne__title">明治・内田橋堀川に</h1>
+          <a href="faq.html" class="sectionOne__faqBtn">よくある 質問</a>
 
-        <section class="sectionOne" id="sectionOne">
-          <div class="sectionOne__inner">
-             <h1 class="sectionOne__title">明治・内田橋堀川に</h1>
-             <a href="faq.html" class="sectionOne__faqBtn">よくある
-               質問</a>
-
-             <div class="sectionOne__list">
-
-
-              <div class="sectionOne__item sectionOnecard">
-                  <img src="./images/sectionOne.svg" alt="" class="card__img">
-                  <div class="card__details">
-                     <h3 class="card__title">
-                      お住みまいのかた
-                     </h3>
-                     <ul class="card__list">
-                        <li class="card__list-item">ゴミ出し</li>
-                        <li class="card__list-item">ゴミ出し</li>
-                        <li class="card__list-item">ゴミ出し</li>
-                     </ul>
-                  </div>
+          <div class="sectionOne__list">
+            <div class="sectionOne__item sectionOnecard">
+              <img
+                src="./images/sectionOne.svg"
+                alt=""
+                class="sectionOnecard__img"
+              />
+              <div class="sectionOnecard__icon-Home"></div>
+              <div class="sectionOnecard__details">
+                <h3 class="sectionOnecard__title">お住みまいのかた</h3>
+                <ul class="sectionOnecard__list">
+                  <li class="sectionOnecard__list-item">ゴミ出し</li>
+                  <li class="sectionOnecard__list-item">ゴミ出し</li>
+                  <li class="sectionOnecard__list-item">ゴミ出し</li>
+                </ul>
               </div>
-
-              <div class="sectionOne__item sectionOnecard">
-                  <img src="./images/sectionOne.svg" alt="" class="card__img">
-                  <div class="card__details">
-                    <h3 class="card__title">
-                      お住みまいのかた
-                    </h3>
-                    <ul class="card__list">
-                      <li class="card__list-item">ゴミ出し</li>
-                      <li class="card__list-item">ゴミ出し</li>
-                      <li class="card__list-item">ゴミ出し</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="sectionOne__item sectionOnecard">
-                  <img src="./images/sectionOne.svg" alt="" class="card__img">
-                  <div class="card__details">
-                    <h3 class="card__title">
-                      お住みまいのかた
-                    </h3>
-                    <ul class="card__list">
-                      <li class="card__list-item">ゴミ出し</li>
-                      <li class="card__list-item">ゴミ出し</li>
-                      <li class="card__list-item">ゴミ出し</li>
-                  </ul>
-                </div>
-              </div>
-
-             </div>
             </div>
-        </section>
-        <section class="map">
 
-          <div class="map__inner"><img src="./images/map.png" alt="堀川の地図" ></div>
-         </section>
+            <div class="sectionOne__item sectionOnecard">
+              <img
+                src="./images/sectionOne.svg"
+                alt=""
+                class="sectionOnecard__img"
+              />
+              <div class="sectionOnecard__icon-Home"></div>
 
+              <div class="sectionOnecard__details">
+                <h3 class="sectionOnecard__title">お住みまいのかた</h3>
+                <ul class="sectionOnecard__list">
+                  <li class="sectionOnecard__list-item">ゴミ出し</li>
+                  <li class="sectionOnecard__list-item">ゴミ出し</li>
+                  <li class="sectionOnecard__list-item">ゴミ出し</li>
+                </ul>
+              </div>
+            </div>
 
-         <section class="event">
-          <div class="event__inner">
-            <div class="event__header">
-              <div>
+            <div class="sectionOne__item sectionOnecard">
+              <img
+                src="./images/sectionOne.svg"
+                alt=""
+                class="sectionOnecard__img"
+              />
+              <div class="sectionOnecard__icon-Home"></div>
+              <div class="sectionOnecard__details">
+                <h3 class="sectionOnecard__title">お住みまいのかた</h3>
+                <ul class="sectionOnecard__list">
+                  <li class="sectionOnecard__list-item">ゴミ出し</li>
+                  <li class="sectionOnecard__list-item">ゴミ出し</li>
+                  <li class="sectionOnecard__list-item">ゴミ出し</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="map__inner">
+          <img src="./images/map.svg" alt="堀川の地図" class="map__image" />
+        </div>
+      </section>
+
+      <section class="event">
+        <div class="event__inner">
+          <div class="event__header">
+            <div>
               <div class="event__label">EVENT</div>
               <h2 class="event__title">イベント・観光情報></h2>
             </div>
-              <a href="#" class="event__seeallBtn">すべてみる→</a>
-            </div>
+            <a href="#" class="event__seeallBtn">すべてみる→</a>
+          </div>
 
-
-            <div class="swiper event__card-container">
-              <div class="swiper-wrapper event__cardlist">
-                <!-- Each card must have class 'swiper-slide' -->
-                <div class="swiper-slide event__card CardItem">
-                  <img src="./images/sectionOne.png" alt="event image" />
-                  <div class="card__detail">
-                    <span class="card__status">開催中</span>
-                    <span class="card__date">2025.00.00</span>
-                  </div>
-                  <p class="card__title">ゴミ拾いプロジェクト2025</p>
+          <div class="swiper event__card-container">
+            <div class="swiper-wrapper event__cardlist">
+              <!-- Each card must have class 'swiper-slide' -->
+              <div class="swiper-slide event__card CardItem">
+                <img src="./images/sectionOne.png" alt="event image" />
+                <div class="card__detail">
+                  <span class="card__status">開催中</span>
+                  <span class="card__date">2025.00.00</span>
                 </div>
-
-                <div class="swiper-slide event__card CardItem">
-                  <img src="./images/sectionOne.png" alt="event image" />
-                  <div class="card__detail">
-                    <span class="card__status">開催中</span>
-                    <span class="card-date">2025.00.00</span>
-                  </div>
-                  <p class="card__title">ゴミ拾いプロジェクト2025</p>
-                </div>
-
-
-
-
-                <div class="swiper-slide event__card CardItem">
-                  <img src="./images/sectionOne.png" alt="event image" />
-                  <div class="card__detail">
-                    <span class="card__status">開催中</span>
-                    <span class="card-date">2025.00.00</span>
-                  </div>
-                  <p class="card__title">ゴミ拾いプロジェクト2025</p>
-                </div>
-
-
-
-
-                <div class="swiper-slide event__card CardItem">
-                  <img src="./images/sectionOne.png" alt="event image" />
-                  <div class="card__detail">
-                    <span class="card__status">開催中</span>
-                    <span class="card-date">2025.00.00</span>
-                  </div>
-                  <p class="card__title">ゴミ拾いプロジェクト2025</p>
-                </div>
-
-
-
-                <div class="swiper-slide event__card CardItem">
-                  <img src="./images/sectionOne.png" alt="event image" />
-                  <div class="card__detail">
-                    <span class="card__status">開催中</span>
-                    <span class="card-date">2025.00.00</span>
-                  </div>
-                  <p class="card__title">ゴミ拾いプロジェクト2025</p>
-                </div>
-
-
-
-
-                <div class="swiper-slide event__card CardItem">
-                  <img src="./images/sectionOne.png" alt="event image" />
-                  <div class="card__detail">
-                    <span class="card__status">開催中</span>
-                    <span class="card-date">2025.00.00</span>
-                  </div>
-                  <p class="card__title">ゴミ拾いプロジェクト2025</p>
-                </div>
+                <p class="card__title">ゴミ拾いプロジェクト2025</p>
               </div>
 
-              <!--navigation buttons -->
-              <div class="swiper-button-prev event__scrollleft-btn"></div>
-              <div class="swiper-button-next event__scrollright-btn"></div>
+              <div class="swiper-slide event__card CardItem">
+                <img src="./images/sectionOne.png" alt="event image" />
+                <div class="card__detail">
+                  <span class="card__status">開催中</span>
+                  <span class="card-date">2025.00.00</span>
+                </div>
+                <p class="card__title">ゴミ拾いプロジェクト2025</p>
+              </div>
+
+              <div class="swiper-slide event__card CardItem">
+                <img src="./images/sectionOne.png" alt="event image" />
+                <div class="card__detail">
+                  <span class="card__status">開催中</span>
+                  <span class="card-date">2025.00.00</span>
+                </div>
+                <p class="card__title">ゴミ拾いプロジェクト2025</p>
+              </div>
+
+              <div class="swiper-slide event__card CardItem">
+                <img src="./images/sectionOne.png" alt="event image" />
+                <div class="card__detail">
+                  <span class="card__status">開催中</span>
+                  <span class="card-date">2025.00.00</span>
+                </div>
+                <p class="card__title">ゴミ拾いプロジェクト2025</p>
+              </div>
+
+              <div class="swiper-slide event__card CardItem">
+                <img src="./images/sectionOne.png" alt="event image" />
+                <div class="card__detail">
+                  <span class="card__status">開催中</span>
+                  <span class="card-date">2025.00.00</span>
+                </div>
+                <p class="card__title">ゴミ拾いプロジェクト2025</p>
+              </div>
+
+              <div class="swiper-slide event__card CardItem">
+                <img src="./images/sectionOne.png" alt="event image" />
+                <div class="card__detail">
+                  <span class="card__status">開催中</span>
+                  <span class="card-date">2025.00.00</span>
+                </div>
+                <p class="card__title">ゴミ拾いプロジェクト2025</p>
+              </div>
             </div>
 
-            </div>
+            <!--navigation buttons -->
+            <div class="swiper-button-prev event__scrollleft-btn"></div>
+            <div class="swiper-button-next event__scrollright-btn"></div>
           </div>
-         </section>
+        </div>
+      </section>
 
-
-         <section class="news">
-          <div class="news__inner">
-            <div class="news__header">
-              <div>
+      <section class="news">
+        <div class="news__inner">
+          <div class="news__header">
+            <div>
               <div class="news__label">NEWS</div>
-                <h2 class="news__title">お知らせ</h2>
+              <h2 class="news__title">お知らせ</h2>
             </div>
-              <a href="#" class="news__seeallBtn">すべてみる→</a>
-            </div>
+            <a href="#" class="news__seeallBtn">すべてみる→</a>
+          </div>
 
-            <ul class="news__list">
-              <li class="news__item">
-                <span class="news__tag">活動報告</span>
-                <span class="news__date">2025.00.00</span>
-                <span class="news__month">4月</span>
-                <span class="news__summary">活動報告</span>
-              </li>
-              <li class="news__item">
-                <span class="news__tag">活動報告</span>
-                <span class="news__date">2025.00.00</span>
-                <span class="news__month">4月</span>
-                <span class="news__summary">活動報告</span>
-              </li>
-              <li class="news__item">
-                <span class="news__tag">活動報告</span>
-                <span class="news__date">2025.00.00</span>
-                <span class="news__month">4月</span>
-                <span class="news__summary">活動報告</span>
-              </li>
+          <ul class="news__list">
+            <li class="news__item">
+              <span class="news__tag">活動報告</span>
+              <span class="news__date">2025.00.00</span>
+              <span class="news__month">4月</span>
+              <span class="news__summary">活動報告</span>
+            </li>
+            <li class="news__item">
+              <span class="news__tag">活動報告</span>
+              <span class="news__date">2025.00.00</span>
+              <span class="news__month">4月</span>
+              <span class="news__summary">活動報告</span>
+            </li>
+            <li class="news__item">
+              <span class="news__tag">活動報告</span>
+              <span class="news__date">2025.00.00</span>
+              <span class="news__month">4月</span>
+              <span class="news__summary">活動報告</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="voice">
+        <div class="voice__inner">
+          <h2 class="voice__title">まちづくりに、あなたのひとことを</h2>
+          <p class="voice__text">どんなことでも、お気軽にどうぞ。</p>
+          <p class="voice__text">
+            「こんな取り組みがあったらいいな」「ここがちょっと気になる」など、あなたの声が地域の未来をつくります！
+          </p>
+
+          <a href="#" class="voice__btn">ご意見はこちらから➝</a>
+        </div>
+        <div class="section-divider"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h4 class="footer__heading">トップページ</h4>
+            <ul class="footer__list">
+              <li><a href="#">協議会って？</a></li>
+              <li><a href="#">街について</a></li>
+              <li><a href="#">イベント・観光情報</a></li>
+              <li><a href="#">お知らせ</a></li>
+              <li><a href="#">ご意見</a></li>
             </ul>
           </div>
-         </section>
+          <div class="footer__column">
+            <h4 class="footer__heading">住民のかた向け</h4>
+            <ul class="footer__list">
+              <li><a href="#">ハザードマップ</a></li>
+              <li><a href="#">ゴミ出し</a></li>
+              <li><a href="#">補助金</a></li>
+              <li><a href="#">近隣駐車場</a></li>
+              <li><a href="#">ご意見</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__heading">観光客のかた向け</h4>
+            <ul class="footer__list">
+              <li><a href="#">イベント情報</a></li>
+              <li><a href="#">周辺観光</a></li>
+              <li><a href="#">飲食店情報</a></li>
+              <li><a href="#">活動の人員募集</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__heading">街について</h4>
+            <ul class="footer__list">
+              <li><a href="#">街の歴史</a></li>
+              <li><a href="#">川について</a></li>
+              <li><a href="#">街の課題など</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__heading">協議会について</h4>
+            <ul class="footer__list">
+              <li><a href="#">なりたち</a></li>
+              <li><a href="#">活動内容</a></li>
+              <li><a href="#">メンバー紹介</a></li>
+              <li><a href="#">協議会メンバー募集</a></li>
+              <li><a href="#">よくある質問</a></li>
+            </ul>
+          </div>
+        </div>
 
-         <section class="voice">
-           <div class="voice__inner">
-             <h2 class="voice__title" >まちづくりに、あなたのひとことを</h2>
-             <p class="voice__text">
-              どんなことでも、お気軽にどうぞ。
-             </p>
-             <p class="voice__text">「こんな取り組みがあったらいいな」「ここがちょっと気になる」など、あなたの声が地域の未来をつくります！</p>
+        <div class="footer__sns"><span></span><span></span><span></span></div>
 
-
-             <a href="#" class="voice__btn">ご意見はこちらから➝</a>
-
-           </div>
-           <div class="section-divider"></div>
-         </section>
-
-        </main>
-
-
-
-
-            <footer class="footer">
-              <div class="footer__inner">
-                <div class="footer__columns">
-                  <div class="footer__column">
-                    <h4 class="footer__heading">トップページ</h4>
-                    <ul class="footer__list">
-                      <li><a href="#">協議会って？</a></li>
-                      <li><a href="#">街について</a></li>
-                      <li><a href="#">イベント・観光情報</a></li>
-                      <li><a href="#">お知らせ</a></li>
-                      <li><a href="#">ご意見</a></li>
-                    </ul>
-                  </div>
-                  <div class="footer__column">
-                    <h4 class="footer__heading">住民のかた向け</h4>
-                    <ul class="footer__list">
-                      <li><a href="#">ハザードマップ</a></li>
-                      <li><a href="#">ゴミ出し</a></li>
-                      <li><a href="#">補助金</a></li>
-                      <li><a href="#">近隣駐車場</a></li>
-                      <li><a href="#">ご意見</a></li>
-                    </ul>
-                  </div>
-                  <div class="footer__column">
-                    <h4 class="footer__heading">観光客のかた向け</h4>
-                    <ul class="footer__list">
-                      <li><a href="#">イベント情報</a></li>
-                      <li><a href="#">周辺観光</a></li>
-                      <li><a href="#">飲食店情報</a></li>
-                      <li><a href="#">活動の人員募集</a></li>
-                    </ul>
-                  </div>
-                  <div class="footer__column">
-                    <h4 class="footer__heading">街について</h4>
-                    <ul class="footer__list">
-                      <li><a href="#">街の歴史</a></li>
-                      <li><a href="#">川について</a></li>
-                      <li><a href="#">街の課題など</a></li>
-                    </ul>
-                  </div>
-                  <div class="footer__column">
-                    <h4 class="footer__heading">協議会について</h4>
-                    <ul class="footer__list">
-                      <li><a href="#">なりたち</a></li>
-                      <li><a href="#">活動内容</a></li>
-                      <li><a href="#">メンバー紹介</a></li>
-                      <li><a href="#">協議会メンバー募集</a></li>
-                      <li><a href="#">よくある質問</a></li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="footer__sns">
-                  <span></span><span></span><span></span>
-                </div>
-
-                <div class="footer__copy">
-                  ©明治・内田橋堀川まちづくり協議会
-                </div>
-              </div>
-            </footer>
-
-
+        <div class="footer__copy">©明治・内田橋堀川まちづくり協議会</div>
+      </div>
+    </footer>
 
     <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
