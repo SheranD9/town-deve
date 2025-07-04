@@ -9,6 +9,10 @@ body {
   background-color: #52b3e6;
 }
 
+.header {
+  padding: 20px;
+  color: #fff;
+}
 .header__inner {
   max-width: 1300px;
   width: 87.5%;
@@ -381,23 +385,9 @@ body {
   white-space: nowrap;
 }
 
-.section-divider {
-  background-image: url("../images/footercircle.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  height: 215px;
-  width: 100%;
-}
-
-.footer {
-  position: relative;
-  margin-top: 140px;
-}
-
 .voice {
   padding: 120px 80px;
-  background: #fa4b06;
+  background: #656363;
   color: #fff;
 }
 .voice__inner {
@@ -426,7 +416,9 @@ body {
 
 .footer {
   padding: 40px 20px;
+  background-color: #fa4b06;
   color: #fff;
+  background-size: cover;
 }
 .footer__inner {
   max-width: 1200px;
@@ -480,12 +472,330 @@ body {
   text-align: center;
   font-size: 14px;
 }
-
+.footer__copy::after {
+  background: url(../images/footer.svg) no-repeat center center;
+  background-size: cover;
+}
 @media (max-width: 768px) {
-  .footer__columns {
+  .footer .footer__columns {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+}
+
+.main__council {
+  background: #fffae2;
+}
+
+.council-firstView__inner {
+  max-width: 1300px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.council-firstView__title {
+  margin-bottom: 80px;
+  padding-top: 80px;
+}
+.council-firstView__title__text {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.council-firstView__title__icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0;
+}
+.council-firstView__title__span {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.council-firstView__image {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  margin-left: calc(50% - 50vw);
+}
+
+.council-voice {
+  margin-top: 97px;
+}
+.council-voice__inner {
+  max-width: 1300px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.council-voice__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 70px;
+  text-align: left;
+}
+.council-voice__title__span {
+  color: #fa4b06;
+  font-weight: bold;
+}
+.council-voice__text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 150px;
+}
+.council-voice__card-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+.council-voice__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 80px;
+}
+.council-voice__card__title {
+  position: absolute;
+  top: -35px;
+  left: 25px;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  width: 200px;
+}
+.council-voice__card__picture {
+  margin-bottom: 50px;
+}
+.council-voice__card__text {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  line-height: 1.6;
+  padding: 0 20px;
+  width: 500px;
+}
+
+.council-activities {
+  margin-top: 97px;
+}
+.council-activities__inner {
+  max-width: 1300px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.council-activities__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 70px;
+  text-align: left;
+}
+.council-activities__title__span {
+  color: #fa4b06;
+  font-weight: bold;
+}
+.council-activities__text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 150px;
+}
+.council-activities__card-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+.council-activities__image {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  margin-left: calc(50% - 50vw);
+}
+.council-activities__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 80px;
+}
+.council-activities__card__title {
+  position: absolute;
+  top: -35px;
+  left: 25px;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  width: 200px;
+}
+.council-activities__card__picture {
+  margin-bottom: 50px;
+}
+.council-activities__card__text {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  line-height: 1.6;
+  padding: 0 20px;
+  width: 500px;
+}
+
+.council-foundation {
+  margin-top: 97px;
+}
+.council-foundation__inner {
+  max-width: 1300px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.council-foundation__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 70px;
+  text-align: left;
+}
+.council-foundation__title__span {
+  color: #fa4b06;
+  font-weight: bold;
+}
+.council-foundation__text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 150px;
+}
+.council-foundation__card-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+.council-foundation__image {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  margin-left: calc(50% - 50vw);
+}
+.council-foundation__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 80px;
+}
+.council-foundation__card__title {
+  position: absolute;
+  top: -35px;
+  left: 25px;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  width: 200px;
+}
+.council-foundation__card__picture {
+  margin-bottom: 50px;
+}
+.council-foundation__card__text {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  line-height: 1.6;
+  padding: 0 20px;
+  width: 500px;
+}
+
+.council-join-us__inner {
+  max-width: 1300px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 60px 0;
+}
+.council-join-us__text {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 80px;
+  padding: 20px;
+  border-bottom: 2px dashed #fa4b06;
+}
+.council-join-us__title {
+  margin-bottom: 80px;
+  padding-top: 80px;
+}
+.council-join-us__title__text {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.council-join-us__title__icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+.council-join-us__title__span {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+  font-weight: bold;
+  display: block;
+}
+.council-join-us__image {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  margin-left: calc(50% - 50vw);
+}
+.council-join-us__list-item {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #fa4b06;
+}
+
+@media (max-width: 600px) {
+  .council-join-us__title__text {
+    font-size: 18px;
+  }
+  .council-join-us__inner {
+    padding: 30px 0;
+  }
+}
+.council-contact__inner {
+  max-width: 1300px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.council-contact__text {
+  margin-bottom: 80px;
+}
+.council-contact__introduction {
+  margin-bottom: 80px;
 }
 /*# sourceMappingURL=style.css.map */
