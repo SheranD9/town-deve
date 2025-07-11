@@ -43,3 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Change footer color by page
+const footer = document.querySelector(".footer");
+if (footer) {
+  if (window.location.pathname.includes("council.html")) {
+    footer.style.backgroundColor = "#52B3E6"; // Council page color
+  } else {
+    footer.style.backgroundColor = "#fa4b06"; // Default/home page color
+  }
+}
