@@ -11,7 +11,7 @@ body {
 
 .header {
   padding: 20px;
-  color: #000000;
+  color: #fff;
 }
 .header__inner {
   max-width: 1300px;
@@ -183,34 +183,50 @@ body {
 .sectionOne__faqBtn:hover {
   background-color: #e60073;
 }
-.sectionOne__card {
-  border-right: 5px solid #000;
-  margin-bottom: 125px;
-  padding: 130px;
+
+.sectionOnecard {
+  border-radius: 10px;
+  width: 300px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  position: relative;
 }
-.sectionOne__card ::last-child {
-  border-right: none;
-}
-.sectionOne__cardtitle {
-  font-size: 24px;
+.sectionOnecard__title {
+  font-size: 14px;
   font-weight: bold;
-  margin: 13px 0 50px 0;
+  margin-bottom: 10px;
+  text-align: center;
 }
-.sectionOne__cardlist {
-  list-style: circle;
+.sectionOnecard__list-item {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  border-radius: 20px;
 }
-.sectionOne .orange {
-  background-color: #fa9806;
+.sectionOnecard__img {
+  position: relative;
 }
+.sectionOnecard__icon-Home {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/houseIcon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
 @media (max-width: 600px) {
-  .sectionOne .sectionOne__faqBtn {
+  .sectionOne__faqBtn {
     bottom: 20px;
     right: 20px;
     font-size: 13px;
     padding: 10px 16px;
   }
 }
-
 .map {
   margin: 50px;
 }
@@ -982,39 +998,10 @@ z .swiper-slide {
   font-weight: bold;
   margin-bottom: 160px;
 }
-.activities__list {
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 32px;
-}
-.activities__item {
-  flex: 0 1 48%;
-  background-color: #fffdeb;
-  border: 2px solid #000;
-  border-radius: 20px;
-  overflow: hidden;
-  width: 100%;
-  max-width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: box-shadow 0.3s;
-  padding-bottom: 20px;
-  margin-bottom: 32px;
-}
-
-.card__content {
-  margin: 20px;
-  text-align: left;
-}
-.card__status-date {
-  margin-bottom: 8px;
-}
-.card__status {
+.activities__subtitle {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 80px;
   font-weight: bold;
   margin-bottom: 10px;
   border: 1px dashed #000;
@@ -1022,21 +1009,21 @@ z .swiper-slide {
   border-radius: 10px;
   margin-right: 30px;
 }
-.card__title {
+.activities__title {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.card__description {
+.activities__description {
   font-size: 16px;
   color: #333;
   line-height: 1.5;
   margin: 20px;
 }
-.card__info {
+.activities__info {
   margin-bottom: 90px;
 }
-.card__link {
+.activities__link {
   text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
