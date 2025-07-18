@@ -41,7 +41,7 @@ body {
 .header {
   background-color: #52b3e6;
   padding: 20px;
-  color: #fff;
+  // color: #fff;
   &__inner {
     @include inner();
     @include flex();
