@@ -13,7 +13,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
     <header class="header">
@@ -22,18 +22,40 @@
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
-              <a href="./council.html">協議会関連</a>
+              <a href="./council.html">
+                <span class="header__nav-icon"></span>協議会関連</a
+              >
             </li>
-            <li class="header__nav-item">イベント・観光</li>
-            <li class="header__nav-item">街について</li>
-            <li class="header__nav-item">街の声収集</li>
-            <li class="header__nav-item">お役立ち情報</li>
+            <li class="header__nav-item">
+              <a href="#"
+                ><span class="header__nav-icon"></span> イベント・観光</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="#"><span class="header__nav-icon"></span>街について</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#"><span class="header__nav-icon"></span>街の声収集</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#"><span class="header__nav-icon"></span>お役立ち情報</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main">
       <section class="FirstView">
+        <img
+          src="./images/indexTopUpVector.svg"
+          class="FirstView__vector top-left"
+          alt="Vector 1"
+        />
+        <img
+          src="./images/indexTopDownVector.svg"
+          class="FirstView__vector bottom-right"
+          alt="Vector 2"
+        />
         <div class="FirstView__inner">
           <div class="scroll-indicator">
             <a href="#sectionOne" class="scrollBtn">
@@ -49,6 +71,7 @@
                   </textPath>
                 </text>
               </svg>
+
               <span class="scroll-indicator__arrow">↓</span>
             </a>
           </div>
@@ -57,69 +80,82 @@
 
       <section class="sectionOne" id="sectionOne">
         <div class="sectionOne__inner">
-          <h1 class="sectionOne__title">明治・内田橋堀川に</h1>
           <a href="faq.html" class="sectionOne__faqBtn">よくある 質問</a>
 
           <div class="sectionOne__list">
-            <div class="sectionOne__item sectionOnecard">
-              <img
-                src="./images/sectionOne.svg"
-                alt=""
-                class="sectionOnecard__img"
-              />
-              <div class="sectionOnecard__icon-Home"></div>
-              <div class="sectionOnecard__details">
-                <h3 class="sectionOnecard__title">お住みまいのかた</h3>
-                <ul class="sectionOnecard__list">
-                  <li class="sectionOnecard__list-item">ゴミ出し</li>
-                  <li class="sectionOnecard__list-item">ゴミ出し</li>
-                  <li class="sectionOnecard__list-item">ゴミ出し</li>
+            <a href="#">
+              <div class="sectionOne__card CardItem">
+                <img
+                  src="./images/sectionOnevector1.png"
+                  alt="House Icon"
+                  class="icon"
+                />
+                <h3 class="sectionOne__cardtitle">お住まいのかた</h3>
+                <ul class="sectionOne__cardlist"">
+                  <li><span class="dot orange"></span>ゴミ出し</li>
+                  <li><span class="dot orange"></span>ハザードマップ</li>
+                  <li><span class="dot orange"></span>補助金</li>
                 </ul>
               </div>
-            </div>
+               </a>
 
-            <div class="sectionOne__item sectionOnecard">
-              <img
-                src="./images/sectionOne.svg"
-                alt=""
-                class="sectionOnecard__img"
-              />
-              <div class="sectionOnecard__icon-Home"></div>
 
-              <div class="sectionOnecard__details">
-                <h3 class="sectionOnecard__title">お住みまいのかた</h3>
-                <ul class="sectionOnecard__list">
-                  <li class="sectionOnecard__list-item">ゴミ出し</li>
-                  <li class="sectionOnecard__list-item">ゴミ出し</li>
-                  <li class="sectionOnecard__list-item">ゴミ出し</li>
+
+
+
+
+            <a href="#">
+              <div class="sectionOne__card CardItem">
+                <img
+                  src="./images/sectionOnevector2.png"
+                  alt="House Icon"
+                  class="icon"
+                />
+                <h3 class="sectionOne__cardtitle">お住まいのかた</h3>
+                <ul class="sectionOne__cardlist"">
+                  <li><span class="dot orange"></span>ゴミ出し</li>
+                  <li><span class="dot orange"></span>ハザードマップ</li>
+                  <li><span class="dot orange"></span>補助金</li>
                 </ul>
               </div>
-            </div>
+            </a>
 
-            <div class="sectionOne__item sectionOnecard">
-              <img
-                src="./images/sectionOne.svg"
-                alt=""
-                class="sectionOnecard__img"
-              />
-              <div class="sectionOnecard__icon-Home"></div>
-              <div class="sectionOnecard__details">
-                <h3 class="sectionOnecard__title">お住みまいのかた</h3>
-                <ul class="sectionOnecard__list">
-                  <li class="sectionOnecard__list-item">ゴミ出し</li>
-                  <li class="sectionOnecard__list-item">ゴミ出し</li>
-                  <li class="sectionOnecard__list-item">ゴミ出し</li>
+
+
+
+            <a href="#">
+              <div class="sectionOne__card CardItem">
+                <img
+                  src="./images/sectionOnevector3.png"
+                  alt="House Icon"
+                  class="icon"
+                />
+                <h3 class="sectionOne__cardtitle">お住まいのかた</h3>
+                <ul class="sectionOne__cardlist"">
+                  <li><span class="dot orange"></span>ゴミ出し</li>
+                  <li><span class="dot orange"></span>ハザードマップ</li>
+                  <li><span class="dot orange"></span>補助金</li>
                 </ul>
               </div>
-            </div>
+            </a>
+
           </div>
         </div>
       </section>
 
       <section class="map">
         <div class="map__inner">
-          <img src="./images/map.svg" alt="堀川の地図" class="map__image" />
-        </div>
+
+          <img src="./images/mapText.svg" alt="" class="map__text"">
+
+        <img src="./images/map.svg" alt="" class="map__image">
+
+      </div>
+
+
+
+
+
       </section>
 
       <section class="event">

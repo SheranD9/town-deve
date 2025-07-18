@@ -6,12 +6,12 @@ img {
 }
 
 body {
-  background-color: #52b3e6;
+  background-color: #fffae2;
 }
 
 .header {
   padding: 20px;
-  color: #fff;
+  color: #000000;
 }
 .header__inner {
   max-width: 1300px;
@@ -49,7 +49,7 @@ body {
 }
 
 .FirstView {
-  background: url(../images/mainvisual.svg) no-repeat center center;
+  background: url(../images/indexTopBg.svg) no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
@@ -58,6 +58,24 @@ body {
   width: 87.5%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  width: 100%;
+}
+.FirstView__vector {
+  position: absolute;
+  width: 800px;
+  height: auto;
+  z-index: -999;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
 }
 
 .scroll-indicator {
@@ -117,6 +135,8 @@ body {
   background-size: 100%;
   width: 100%;
   padding: 20px;
+  background: url(../images/soectionOneBg.svg) no-repeat center center;
+  background-size: cover;
 }
 .sectionOne__inner {
   max-width: 1300px;
@@ -163,50 +183,34 @@ body {
 .sectionOne__faqBtn:hover {
   background-color: #e60073;
 }
-
-.sectionOnecard {
-  border-radius: 10px;
-  width: 300px;
-  margin-bottom: 20px;
-  background-color: #fff;
-  position: relative;
+.sectionOne__card {
+  border-right: 5px solid #000;
+  margin-bottom: 125px;
+  padding: 130px;
 }
-.sectionOnecard__title {
-  font-size: 14px;
+.sectionOne__card ::last-child {
+  border-right: none;
+}
+.sectionOne__cardtitle {
+  font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px;
-  text-align: center;
+  margin: 13px 0 50px 0;
 }
-.sectionOnecard__list-item {
-  font-size: 16px;
-  color: #333;
-  text-align: center;
-  border-radius: 20px;
+.sectionOne__cardlist {
+  list-style: circle;
 }
-.sectionOnecard__img {
-  position: relative;
+.sectionOne .orange {
+  background-color: #fa9806;
 }
-.sectionOnecard__icon-Home {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  background-image: url(../images/houseIcon.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  pointer-events: none;
-}
-
 @media (max-width: 600px) {
-  .sectionOne__faqBtn {
+  .sectionOne .sectionOne__faqBtn {
     bottom: 20px;
     right: 20px;
     font-size: 13px;
     padding: 10px 16px;
   }
 }
+
 .map {
   margin: 50px;
 }
@@ -215,6 +219,10 @@ body {
   width: 87.5%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .event {
@@ -317,7 +325,7 @@ body {
   right: 10px;
 }
 
-.swiper-slide {
+z .swiper-slide {
   display: flex;
   justify-content: center;
 }
@@ -853,86 +861,6 @@ body {
   display: block;
   margin: 10px auto;
   font-size: 16px;
-<<<<<<< HEAD
-}
-.questions__list {
-  display: block;
-  width: 100%;
-}
-.questions__item {
-  display: flex;
-  align-items: center;
-  border-bottom: 2px dotted #000;
-  padding: 20px 0;
-}
-.questions__item:not(:last-child) {
-  margin-bottom: 0;
-}
-.questions__item__question {
-  font-weight: bold;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  flex: 1;
-}
-.questions__item__question::before {
-  content: "Q";
-  border: 2px dashed #000;
-  padding: 8px 14px;
-  border-radius: 8px;
-  font-size: 18px;
-  margin-right: 15px;
-  display: inline-block;
-}
-.questions__item__btn {
-  margin-left: auto;
-  font-size: 18px;
-  transform: rotate(0deg);
-  transition: transform ease-out 0.5s;
-  margin-left: auto;
-}
-.questions__item.active .questions__item__btn {
-  transform: rotate(180deg);
-}
-.questions__item__answer {
-  display: none;
-  margin-top: 10px;
-  font-size: 16px;
-  color: #555;
-}
-
-.event-main {
-  background-color: #fffae2;
-}
-
-.activities__inner {
-  max-width: 1300px;
-  width: 87.5%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.activities__title {
-  margin: 160px;
-}
-.activities__title-text {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: left;
-  color: #fff;
-}
-.activities__title-span {
-  color: #fff;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 160px;
-}
-.activities__subtitle {
-  font-size: 16px;
-  color: #000000;
-  margin-bottom: 80px;
-  font-weight: bold;
-  text-align: center;
-=======
 }
 .questions__list {
   display: block;
@@ -1104,6 +1032,5 @@ body {
 }
 .card__link {
   text-align: right;
->>>>>>> 0e5ac322f4134499e89316c485a7c15e07462cb5
 }
 /*# sourceMappingURL=style.css.map */
