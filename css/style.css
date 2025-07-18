@@ -796,22 +796,28 @@ body {
   }
 }
 .council-contact {
-  background: url(../images/people\ back.svg) no-repeat center center;
-  background-size: cover;
-  -webkit-clip-path: polygon(50% 0%, -25% 100%, 125% 100%);
-          clip-path: polygon(50% 0%, -25% 100%, 125% 100%);
+  position: relative;
   width: 100vw;
-  height: 600px;
   margin-left: calc(50% - 50vw);
+  padding-top: 0;
   color: #fff;
-  padding: 200px;
   font-weight: bold;
+}
+.council-contact__visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: -2.2px;
+}
+.council-contact__bg {
+  background-color: #fa4b06;
 }
 .council-contact__inner {
   max-width: 1300px;
   width: 87.5%;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 0 200px;
   text-align: center;
 }
 .council-contact__text {

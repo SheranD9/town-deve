@@ -4,7 +4,7 @@ $breakpoints: (
   "mobile": "screen and (min-width: 480px)",
   "tablet": "screen and (min-width: 768px)",
   "full": "screen and (min-width: 1280px)",
-) !default;
+  ) !default;
 
 @mixin query($breakpoint) {
   @media #{map-get($breakpoints, $breakpoint)} {
@@ -25,6 +25,7 @@ $breakpoints: (
   flex-wrap: wrap;
   align-items: $a;
 }
+
 img {
   max-width: 100%;
   margin-left: auto;
@@ -35,36 +36,42 @@ img {
 body {
   background-color: #52b3e6;
 }
+
 //header
 .header {
   padding: 20px;
   color: #fff;
-  &__inner {
-    @include inner();
-    @include flex();
-  }
-  &__nav-list {
-    @include flex(space-between);
-  }
-  &__nav-item {
-    margin-right: 60px;
-    font-weight: bold;
-    transition: transform 0.2s ease-in-out;
-    display: flex;
-    align-items: center; // Ensures icon and text are vertically centered
 
-    &:hover {
-      transform: scale(1.1);
-    }
+  &__inner {
+    @include inner(
+  );
+  @include flex();
+}
+
+&__nav-list {
+  @include flex(space-between);
+}
+
+&__nav-item {
+  margin-right: 60px;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  align-items: center; // Ensures icon and text are vertically centered
+
+  &:hover {
+    transform: scale(1.1);
   }
-  &__nav-icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background: url(../images/dog.svg) no-repeat center center;
-    background-size: contain;
-    margin-right: 8px; // Space between icon and text
-  }
+}
+
+&__nav-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(../images/dog.svg) no-repeat center center;
+  background-size: contain;
+  margin-right: 8px; // Space between icon and text
+}
 }
 
 //firstView
@@ -121,6 +128,7 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -150,6 +158,7 @@ body {
     @include flex(space-between);
     flex-wrap: wrap;
   }
+
   &__faqBtn {
     position: fixed;
     bottom: 40px;
@@ -189,15 +198,18 @@ body {
     margin-bottom: 10px;
     text-align: center;
   }
+
   &__list-item {
     font-size: 16px;
     color: #333;
     text-align: center;
     border-radius: 20px;
   }
+
   &__img {
     position: relative;
   }
+
   &__icon-Home {
     position: absolute;
     top: 30%;
@@ -211,6 +223,7 @@ body {
     pointer-events: none;
   }
 }
+
 @media (max-width: 600px) {
   .sectionOne__faqBtn {
     bottom: 20px;
@@ -224,6 +237,7 @@ body {
 
 .map {
   margin: 50px;
+
   &__inner {
     @include inner();
   }
@@ -349,6 +363,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 ///news section
 .news {
   padding: 40px 20px;
@@ -450,6 +465,7 @@ body {
   padding: 120px 80px;
   background: #656363;
   color: #fff;
+
   &__inner {
     @include inner();
   }
@@ -459,10 +475,12 @@ body {
     font-size: 24px;
     font-weight: bold;
   }
+
   &__text {
     margin-bottom: 30px;
     font-size: 16px;
   }
+
   &__btn {
     display: block;
     margin-left: auto;
@@ -553,6 +571,7 @@ body {
     }
   }
 }
+
 ///
 /// council.html
 
@@ -565,6 +584,7 @@ body {
     @include inner();
     text-align: center;
   }
+
   &__title {
     margin-bottom: 80px;
     padding-top: 80px;
@@ -574,11 +594,13 @@ body {
       font-weight: bold;
       text-align: center;
     }
+
     &__icon {
       width: 50px;
       height: 50px;
       margin-bottom: 0;
     }
+
     &__span {
       font-size: 16px;
       color: #333;
@@ -586,6 +608,7 @@ body {
       font-weight: bold;
     }
   }
+
   &__image {
     display: block;
     width: 100vw;
@@ -594,6 +617,7 @@ body {
     margin-left: calc(50% - 50vw);
   }
 }
+
 //////council-voice//////
 
 .council-voice {
@@ -602,16 +626,19 @@ body {
   &__inner {
     @include inner();
   }
+
   &__title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 70px;
     text-align: left;
+
     &__span {
       color: #fa4b06;
       font-weight: bold;
     }
   }
+
   &__text {
     font-size: 16px;
     font-weight: 600;
@@ -619,12 +646,14 @@ body {
     color: #333;
     margin-bottom: 150px;
   }
+
   &__card-list {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 24px;
   }
+
   &__card {
     position: relative;
     display: flex;
@@ -644,9 +673,11 @@ body {
       background-color: #ffffff;
       width: 200px;
     }
+
     &__picture {
       margin-bottom: 50px;
     }
+
     &__text {
       font-size: 16px;
       color: #333;
@@ -665,6 +696,7 @@ body {
   &__inner {
     @include inner();
   }
+
   &__title {
     font-size: 24px;
     font-weight: bold;
@@ -676,6 +708,7 @@ body {
       font-weight: bold;
     }
   }
+
   &__text {
     font-size: 16px;
     font-weight: 600;
@@ -683,12 +716,14 @@ body {
     color: #333;
     margin-bottom: 150px;
   }
+
   &__card-list {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 24px;
   }
+
   &__image {
     display: block;
     width: 100vw;
@@ -696,6 +731,7 @@ body {
     height: auto;
     margin-left: calc(50% - 50vw);
   }
+
   &__card {
     position: relative;
     display: flex;
@@ -715,9 +751,11 @@ body {
       background-color: #ffffff;
       width: 200px;
     }
+
     &__picture {
       margin-bottom: 50px;
     }
+
     &__text {
       font-size: 16px;
       color: #333;
@@ -736,6 +774,7 @@ body {
   &__inner {
     @include inner();
   }
+
   &__title {
     font-size: 24px;
     font-weight: bold;
@@ -747,6 +786,7 @@ body {
       font-weight: bold;
     }
   }
+
   &__text {
     font-size: 16px;
     font-weight: 600;
@@ -754,12 +794,14 @@ body {
     color: #333;
     margin-bottom: 150px;
   }
+
   &__card-list {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 24px;
   }
+
   &__image {
     display: block;
     width: 100vw;
@@ -767,6 +809,7 @@ body {
     height: auto;
     margin-left: calc(50% - 50vw);
   }
+
   &__card {
     position: relative;
     display: flex;
@@ -786,9 +829,11 @@ body {
       background-color: #ffffff;
       width: 200px;
     }
+
     &__picture {
       margin-bottom: 50px;
     }
+
     &__text {
       font-size: 16px;
       color: #333;
@@ -815,6 +860,7 @@ body {
     padding: 20px;
     border-bottom: 2px dashed #fa4b06;
   }
+
   &__title {
     margin-bottom: 80px;
     padding-top: 80px;
@@ -824,6 +870,7 @@ body {
       font-weight: bold;
       text-align: center;
     }
+
     &__icon {
       width: 50px;
       height: 50px;
@@ -831,6 +878,7 @@ body {
       display: inline-block;
       vertical-align: middle;
     }
+
     &__span {
       font-size: 16px;
       color: #333;
@@ -859,6 +907,7 @@ body {
   .council-join-us__title__text {
     font-size: 18px;
   }
+
   .council-join-us__inner {
     padding: 30px 0;
   }
@@ -866,30 +915,45 @@ body {
 
 ///////council-contact//////
 .council-contact {
-  background: url(../images/people\ back.svg) no-repeat center center;
-  background-size: cover;
-  clip-path: polygon(50% 0%, -25% 100%, 125% 100%);
+  position: relative;
+  // background: url(../images/people-back.svg) no-repeat center center /cover;
   width: 100vw;
-  height: 600px;
+  // height: 600px;
   margin-left: calc(50% - 50vw);
-
+  padding-top: 0;
   color: #fff;
-  padding: 200px;
   font-weight: bold;
+
+  &__visual {
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin-bottom: -2.2px;
+    }
+  }
+
+  &__bg {
+    background-color: #fa4b06;
+  }
 
   &__inner {
     @include inner();
+    padding: 0 0 200px;
     text-align: center;
   }
+
   &__text {
     margin-bottom: 80px;
   }
+
   &__introduction {
     margin-bottom: 80px;
     background-color: #fff;
     color: #fa4b06;
     padding: 20px;
   }
+
   &__btn {
     margin-bottom: 80px;
     border: 1px dashed #fff;
@@ -985,25 +1049,30 @@ body {
 .event-main {
   background-color: #fffae2;
 }
+
 .activities {
   &__inner {
     @include inner();
   }
+
   &__title {
     margin: 160px;
   }
+
   &__title-text {
     font-size: 24px;
     font-weight: bold;
     text-align: left;
     color: #fff;
   }
+
   &__title-span {
     color: #fff;
     font-weight: bold;
     text-align: left;
     margin-bottom: 160px;
   }
+
   &__subtitle {
     font-size: 16px;
     color: #000000;
