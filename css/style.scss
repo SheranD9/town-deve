@@ -4,7 +4,7 @@ $breakpoints: (
   "mobile": "screen and (min-width: 480px)",
   "tablet": "screen and (min-width: 768px)",
   "full": "screen and (min-width: 1280px)",
-  ) !default;
+) !default;
 
 @mixin query($breakpoint) {
   @media #{map-get($breakpoints, $breakpoint)} {
@@ -39,38 +39,38 @@ body {
 
 //header
 .header {
+  background-color: #52b3e6;
   padding: 20px;
   color: #fff;
   &__inner {
-    @include inner(
-  );
-  @include flex();
-}
-
-&__nav-list {
-  @include flex(space-between);
-}
-
-&__nav-item {
-  margin-right: 60px;
-  font-weight: bold;
-  transition: transform 0.2s ease-in-out;
-  display: flex;
-  align-items: center; // Ensures icon and text are vertically centered
-
-  &:hover {
-    transform: scale(1.1);
+    @include inner();
+    @include flex();
   }
-}
 
-&__nav-icon {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background: url(../images/dog.svg) no-repeat center center;
-  background-size: contain;
-  margin-right: 8px; // Space between icon and text
-}
+  &__nav-list {
+    @include flex(space-between);
+  }
+
+  &__nav-item {
+    margin-right: 60px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center; // Ensures icon and text are vertically centered
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__nav-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/dog.svg) no-repeat center center;
+    background-size: contain;
+    margin-right: 8px; // Space between icon and text
+  }
 }
 
 //firstView
