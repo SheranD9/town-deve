@@ -30,11 +30,19 @@
 
       <body>
             <main class="main__council">
+                  <section class="council-intro">
+                        <div class="council-intro__inner">
+                              <div class="council-intro__content">
+                                    <h2 class="council-intro__title">協議会関連</h2>
+                                    <img src="./images/introImage.svg" alt="">
+                              </div>
+                        </div>
+                  </section>
+
                   <section class="council-firstView">
                         <div class="council-firstView__inner">
 
                               <div class="council-firstView__title">
-                                    <img src="./images/dog.svg" alt="title-icon" class="council-firstView__title__icon">
                                     <h1 class="council-firstView__title__text">活動内容</h1>
                                     <span class="council-firstView__title__span">Work</span>
                               </div>
@@ -44,11 +52,16 @@
                   </section>
 
                   <section class="council-voice">
-                        <div class="council-voice__visual">
-                              <img src="./images/character02.svg" alt="協議会メンバー画像2">
-                              <img src="./images/comment02.svg" alt="コメント：面白いことがいっぱい！">
-                              <img src="./images/comment01.svg" alt="コメント：みんなで楽しくやってるよ！">
-                              <img src="./images/character01.svg" alt="協議会メンバー画像1">
+
+                        <div class="council-voice__visual visual">
+                              <div class="council-voice__visual-group">
+                                    <img src="./images/character02.svg" alt="協議会メンバー画像2">
+                                    <img class="bubble" src="./images/comment02.svg" alt="コメント：面白いことがいっぱい！">
+                              </div>
+                              <div class="council-voice__visual-group">
+                                    <img src="./images/comment01.svg" alt="コメント：みんなで楽しくやってるよ！">
+                                    <img class="bubble" src="./images/character01.svg" alt="協議会メンバー画像1">
+                              </div>
                         </div>
 
                         <div class="council-voice__inner">
@@ -82,7 +95,7 @@
 
 
                                     <div class="council-voice__card">
-                                          <img src="./images/quiz.png" alt="voice1"
+                                          <img src="./images/meeting.png" alt="voice2"
                                                 class="council-voice__card__picture">
                                           <div class="council-voice__card__title">
                                                 <h3 class="council-voice__card__title__text">定期的な会議</h3>
@@ -110,8 +123,16 @@
 
 
                   <section class="council-activities">
-                        <div class="council-activities__inner">
+                        <div class="council-activities__image-wrapper">
                               <img src="./images/Vector 2.png" alt="" class="council-activities__image">
+                        </div>
+
+                        <div class="council-activities__visual visual">
+                              <img src="./images/comment03.svg" alt="コメント：やってやるぞー！">
+                              <img src="./images/character03.svg" alt="協議会メンバー画像3">
+                        </div>
+
+                        <div class="council-activities__inner">
                               <h2 class=" council-activities__title">街の<span
                                           class="council-activities__title__span">今</span>を知る活動</h2>
                               <div class=" council-activities__text">
@@ -140,7 +161,7 @@
 
 
                                     <div class="council-activities__card">
-                                          <img src="./images/quiz.png" alt="activities1"
+                                          <img src="./images/meeting.png" alt="activities2"
                                                 class="council-activities__card__picture">
                                           <div class="council-activities__card__title">
                                                 <h3 class="council-activities__card__title__text">ブラダバシ</h3>
@@ -164,7 +185,16 @@
 
 
                   <section class="council-foundation">
-                        <img src="./images/mainvisual-work.png" alt="" class="council-activities__image">
+
+                        <div class="council-foundation__image-wrapper">
+                              <img src="./images/mainvisual-work.png" alt="" class="council-activities__image">
+                        </div>
+
+                        <div class="council-foundation__visual visual">
+                              <img src="./images/comment04.svg" alt="コメント：ちょー盛り上がってる！">
+                              <img src="./images/character04.svg" alt="協議会メンバー画像4">
+                        </div>
+
                         <div class=" council-foundation__inner">
                               <h2 class="council-foundation__title">街の<span
                                           class="council-foundation__title__span">礎</span>を明確に</h2>
@@ -191,7 +221,7 @@
 
 
                                     <div class="council-voice__card">
-                                          <img src="./images/quiz.png" alt="voice1"
+                                          <img src="./images/meeting.png" alt="voice2"
                                                 class="council-voice__card__picture">
                                           <div class="council-voice__card__title">
                                                 <h3 class="council-voice__card__title__text">定期的な会議</h3>
@@ -214,8 +244,6 @@
                                     <h1 class="council-join-us__title__text">メンバー募集</h1>
                                     <span class="council-join-us__title__span">Join us</span>
                               </div>
-                              <img src="./images/mainvisual-joinus.png" alt="mainvisual-joinus"
-                                    class="council-join-us__image">
                               <h3 class="council-join-us__text">協議会は一緒に街を盛り上げてくれるメンバーを募集しています！</h3>
                               <ul class="council-join-us__list">
                                     <li class="council-join-us__list-item">
@@ -268,8 +296,63 @@
                   <section class="questions">
                         <div class="questions__inner">
                               <h2 class="questions__title">よくある質問</h2>
+                              <details class="details">
+                                    <summary class="details-summary">
+                                          協議会に年齢制限はありますか？<button class="qestion__btn">⬇︎</button>
+                                    </summary>
+                                    <p class="details-content">
+                                          ここは、1つ目のアコーディオンの中身です。<br>
+                                          ここは、1つ目のアコーディオンの中身です。<br>
+                                          ここは、1つ目のアコーディオンの中身です。
+                                    </p>
+                              </details>
 
-                              <div class="question__list">
+                              <details class="details">
+                                    <summary class="details-summary">
+                                          友達と参加しても良いですか？<button class="qestion__btn">⬇︎</button>
+                                    </summary>
+                                    <p class="details-content">
+                                          ここは、2つ目のアコーディオンの中身です。<br>
+                                          ここは、2つ目のアコーディオンの中身です。<br>
+                                          ここは、2つ目のアコーディオンの中身です。
+                                    </p>
+                              </details>
+
+                              <details class="details">
+                                    <summary class="details-summary">
+                                          見学は可能ですか？<button class="qestion__btn">⬇︎</button>
+                                    </summary>
+                                    <p class="details-content">
+                                          ここは、3つ目のアコーディオンの中身です。<br>
+                                          ここは、3つ目のアコーディオンの中身です。<br>
+                                          ここは、3つ目のアコーディオンの中身です。
+                                    </p>
+                              </details>
+
+                              <details class="details">
+                                    <summary class="details-summary">
+                                          協議会に年齢制限はありますか？<button class="qestion__btn">⬇︎</button>
+                                    </summary>
+                                    <p class="details-content">
+                                          ここは、4つ目のアコーディオンの中身です。<br>
+                                          ここは、4つ目のアコーディオンの中身です。<br>
+                                          ここは、4つ目のアコーディオンの中身です。
+                                    </p>
+                              </details>
+
+                              <details class="details">
+                                    <summary class="details-summary">
+                                          協議会に年齢制限はありますか？<button class="qestion__btn">⬇︎</button>
+                                    </summary>
+                                    <p class="details-content">
+                                          ここは、5つ目のアコーディオンの中身です。<br>
+                                          ここは、5つ目のアコーディオンの中身です。<br>
+                                          ここは、5つ目のアコーディオンの中身です。
+                                    </p>
+                              </details>
+                        </div>
+
+                        <!-- <div class="question__list">
 
                                     <div class="questions__item">
                                           <h3 class="questions__item__question"> 協議会に年齢制限はありますか？<button
@@ -299,7 +382,7 @@
                                           <p class="questions__item__answer"> 友達と参加しても良いですか？</p>
 
                                     </div>
-                              </div>
+                              </div> -->
 
                         </div>
 
