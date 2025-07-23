@@ -41,7 +41,7 @@ body {
 .header {
   background-color: #52b3e6;
   padding: 20px;
-  // color: #fff;
+
   &__inner {
     @include inner();
     @include flex();
@@ -351,10 +351,6 @@ body {
     &:hover {
       transform: translateY(-5px);
     }
-
-    
-
-
   }
   &__image {
     width: 100%;
