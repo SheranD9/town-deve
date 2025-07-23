@@ -52,13 +52,13 @@ body {
   background: url(../images/indexTopBg.svg) no-repeat center center;
   background-size: cover;
   height: 100vh;
+  position: relative;
 }
 .FirstView__inner {
   max-width: 1300px;
   width: 87.5%;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
   width: 100%;
 }
 .FirstView__vector {
@@ -67,14 +67,41 @@ body {
   height: auto;
   z-index: -999;
 }
+.FirstView__title {
+  position: absolute;
+  top: 210px;
+  left: 50%;
+  transform: translate(-50%, 90%);
+  text-align: center;
+}
+.FirstView__text {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 90%);
+  text-align: center;
+}
+.FirstView__weather {
+  position: absolute;
+  width: 220px;
+  font-size: 16px;
+  font-weight: bold;
+  top: 0px;
+  right: 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000000;
+  padding: 30px;
+  border-radius: 30px 0 0 30px;
+  z-index: 2;
+}
 
 .top-left {
-  top: 0;
+  top: -105px;
   left: 0;
 }
 
 .bottom-right {
-  bottom: 0;
+  bottom: -3px;
   right: 0;
 }
 
@@ -82,8 +109,8 @@ body {
   position: absolute;
   width: 150px;
   height: 150px;
-  right: 5%;
-  bottom: 60px;
+  right: 30px;
+  top: 815px;
 }
 .scroll-indicator a {
   display: block;
@@ -184,29 +211,26 @@ body {
   background-color: #e60073;
 }
 
-.sectionOnecard {
-  border-radius: 10px;
+.sectionOne__card {
   width: 300px;
   margin-bottom: 20px;
-  background-color: #fff;
   position: relative;
+  border-right: 5px solid #000;
 }
-.sectionOnecard__title {
+.sectionOne__cardtitle {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
-  text-align: center;
 }
-.sectionOnecard__list-item {
-  font-size: 16px;
+.sectionOne__list-item {
+  font-size: 12px;
   color: #333;
   text-align: center;
-  border-radius: 20px;
 }
-.sectionOnecard__img {
+.sectionOne__img {
   position: relative;
 }
-.sectionOnecard__icon-Home {
+.sectionOne__icon {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -218,15 +242,19 @@ body {
   background-repeat: no-repeat;
   pointer-events: none;
 }
-
 @media (max-width: 600px) {
-  .sectionOne__faqBtn {
+  .sectionOne .sectionOne__faqBtn {
     bottom: 20px;
     right: 20px;
     font-size: 13px;
     padding: 10px 16px;
   }
 }
+
+.CardItem ul li::marker {
+  color: #fa9806;
+}
+
 .map {
   margin: 50px;
 }
@@ -277,10 +305,9 @@ body {
 }
 .event__card {
   width: 100%;
-  max-width: 280px;
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 16px;
+  height: 500px;
+  max-width: 500px;
+  border-radius: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -302,6 +329,7 @@ body {
   justify-content: space-between;
   font-size: 14px;
   color: #666;
+  background-color: #fff;
 }
 .event__card__status {
   font-weight: bold;
@@ -341,9 +369,8 @@ body {
   right: 10px;
 }
 
-z .swiper-slide {
+.swiper-slide {
   display: flex;
-  justify-content: center;
 }
 
 .news {
@@ -862,7 +889,6 @@ z .swiper-slide {
 
 .questions {
   position: relative;
-  background-color: #fff;
   padding: 100px;
 }
 .questions__inner {
