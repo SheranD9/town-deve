@@ -35,6 +35,7 @@ img {
 
 body {
   background-color: #fffae2;
+  // font-family: Tsunagi Gothic Black;
 }
 
 //header
@@ -359,43 +360,40 @@ body {
     margin-left: 0;
     margin-right: 0;
   }
-}
+  &__scrollleft-btn &__scrollright-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
 
-&__scrollleft-btn,
-&__scrollright-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  font-size: 24px;
-  color: white;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-}
+  &__scrollleft-btn {
+    left: 10px;
+  }
 
-&__scrollleft-btn {
-  left: 10px;
-}
+  &__scrollright-btn {
+    right: 10px;
+  }
 
-&__scrollright-btn {
-  right: 10px;
-}
-
-.swiper-slide {
-  display: flex;
-  // justify-content: center;
+  .swiper-slide {
+    display: flex;
+    // justify-content: center;
+  }
 }
 
 ///news section
 .news {
   padding: 40px 20px;
-  background: #fff;
   font-family: "Arial", sans-serif;
   text-align: center;
 
@@ -475,6 +473,35 @@ body {
   }
 }
 
+.gallery {
+  width: 100vw; /* Full viewport width */
+  padding: 0;
+  margin: 0;
+  &____inner {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between; /* Even spacing */
+    gap: 0;
+    .gallery__image:nth-child(odd) {
+      transform: translateY(30px);
+    }
+  }
+  &__item {
+    width: 30%;
+  }
+  &__image {
+    width: 100%; /* 5 images = 20% each */
+    height: auto;
+    object-fit: cover;
+    display: block;
+    z-index: 999;
+  }
+}
+
 // //section divider
 // .section-divider::before {
 //   content: "";
@@ -487,52 +514,103 @@ body {
 //   padding: 400px;
 // }
 
-//footer
-
 .voice {
-  padding: 120px 80px;
-  background: #656363;
-  color: #fff;
+  background-color: #fa4b06;
+  padding: 100px 20px;
+  position: relative;
+  text-align: center;
 
-  &__inner {
-    @include inner();
+  &__blob {
+    background: url(../images/newsBg.svg) no-repeat center center/contain;
+    padding: 150px 0;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__content {
+    color: #fa4b06;
+    font-family: "Helvetica Neue", sans-serif;
+  }
+
+  &__small {
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 
   &__title {
-    margin-bottom: 50px;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__wave {
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 
   &__text {
-    margin-bottom: 30px;
     font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.8;
   }
 
   &__btn {
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
-    width: fit-content;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #fa4b06;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #e14400;
+    }
+  }
+
+  &__dog {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    &__blob {
+      border-radius: 30px;
+      padding: 60px 20px;
+    }
+
+    &__dog {
+      position: static;
+      margin-top: 30px;
+    }
   }
 }
-
+//footer
 .footer {
-  padding: 40px 20px;
   background-color: #fa4b06;
   color: #fff;
-  background-size: cover;
 
   &__inner {
     max-width: 1200px;
     margin: 0 auto;
   }
 
+  &__bottom {
+    padding: 380px 0 50px;
+    background: url(../images/footerBg.svg) no-repeat top center;
+    background-size: cover;
+  }
+
   &__columns {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 40px;
   }
 
   &__column {
