@@ -1,3 +1,7 @@
+body {
+  font-weight: bold;
+}
+
 /*--- council-intro ---*/
 .council-intro {
   background: url("../images/Vector3.png") no-repeat center center/cover;
@@ -35,17 +39,50 @@
   display: block;
 }
 
+.council-firstView__title__text {
+  font-size: 34px;
+  letter-spacing: 0.1em;
+}
+.council-firstView__title__span {
+  font-size: 20px;
+}
+
+.breadcrumb {
+  display: flex;
+  margin-top: 20pz;
+}
+.breadcrumb li:first-child::after {
+  content: ">";
+  padding: 0 16px;
+}
+.breadcrumb li:last-child ::after {
+  content: "";
+}
+
 /*--- council-voice ---*/
 .council-voice {
   position: relative;
+  margin-top: 0;
+}
+.council-voice__visual {
+  margin-top: 100px;
 }
 
 .council-voice__visual-group {
   margin-top: -150px;
   margin-left: -30px;
 }
+.council-voice__visual-group:first-child {
+  margin-top: -50px;
+}
 .council-voice__visual-group:first-child .bubble {
-  margin-top: -160px;
+  margin-top: -280px;
+}
+.council-voice__visual-group:last-child {
+  margin-top: -240px;
+}
+.council-voice__visual-group:last-child .bubble {
+  margin-top: 200px;
 }
 
 .council-voice__visual {
@@ -78,6 +115,44 @@
   position: absolute;
   top: 400px;
   right: 90px;
+}
+
+/*--- council-join-us ---*/
+.council-join-us__title__span {
+  font-size: 20px;
+}
+.council-join-us__list-item {
+  margin-bottom: 60px;
+}
+.council-join-us__text {
+  margin-bottom: 130px;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px;
+  border-bottom: 3px dashed #FA4B06;
+}
+
+/*--- council-contact ---*/
+.council-contact {
+  margin-top: -140px;
+}
+.council-contact__text {
+  font-size: 20px;
+}
+.council-contact__introduction {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  line-height: 2.6;
+}
+.council-contact__btn {
+  border: 1px solid #fff;
+  padding: 18px 30px;
+  font-size: 20px;
 }
 
 /*--- questions ---*/

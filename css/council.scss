@@ -26,6 +26,10 @@ $breakpoints: (
       align-items: $a;
 }
 
+body {
+      font-weight: bold;
+}
+
 /*--- council-intro ---*/
 .council-intro {
       background: url("../images/Vector3.png") no-repeat center center /cover;
@@ -66,10 +70,46 @@ $breakpoints: (
 }
 }
 
+.council-firstView {
+
+      &__title {
+            &__text {
+                  font-size: 34px;
+                  letter-spacing: 0.1em;
+            }
+
+            &__span {
+                  font-size: 20px;
+            }
+      }
+}
+
+.breadcrumb {
+      display: flex;
+      margin-top: 20px;
+
+      li:first-child::after {
+            content: '>';
+            padding: 0 16px;
+      }
+
+
+      li:last-child ::after {
+            content: '';
+      }
+}
+
+
+
 /*--- council-voice ---*/
 
 .council-voice {
       position: relative;
+      margin-top: 0;
+
+      &__visual {
+            margin-top: 100px;
+      }
 }
 
 .council-voice__visual-group {
@@ -77,8 +117,18 @@ $breakpoints: (
       margin-left: -30px;
 
       &:first-child {
+            margin-top: -50px;
+
             .bubble {
-                  margin-top: -160px;
+                  margin-top: -280px;
+            }
+      }
+
+      &:last-child {
+            margin-top: -240px;
+
+            .bubble {
+                  margin-top: 200px;
             }
       }
 }
@@ -116,6 +166,53 @@ $breakpoints: (
       position: absolute;
       top: 400px;
       right: 90px;
+}
+
+/*--- council-join-us ---*/
+.council-join-us {
+      &__title {
+            &__span {
+                  font-size: 20px;
+            }
+      }
+
+      &__list-item {
+            margin-bottom: 60px;
+      }
+
+      &__text {
+            margin-bottom: 130px;
+            width: 60%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 14px;
+            border-bottom: 3px dashed #FA4B06;
+      }
+}
+
+/*--- council-contact ---*/
+.council-contact {
+      margin-top: -140px;
+
+      &__text {
+            font-size: 20px;
+      }
+
+      &__introduction {
+            width: 60%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 18px;
+            line-height: 2.6;
+      }
+
+      &__btn {
+            border: 1px solid #fff;
+            padding: 18px 30px;
+            font-size: 20px;
+      }
 }
 
 /*--- questions ---*/
