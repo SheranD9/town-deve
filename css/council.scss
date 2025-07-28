@@ -30,44 +30,55 @@ body {
       font-weight: bold;
 }
 
+.fade-in {
+      opacity: 0;
+      transform: translateY(20px
+      );
+transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+}
+
 /*--- council-intro ---*/
 .council-intro {
-      background: url("../images/Vector3.png") no-repeat center center /cover;
+      background: url("../images/Vector3.png") no-repeat center bottom /cover;
       width: 100%;
       height: 460px;
       position: relative;
 
       &__inner {
-            @include inner(
-      );
-}
-
-&__content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 150px;
-
-      img {
-            position: absolute;
-            width: 360px;
-            right: 120px;
-            bottom: -20px;
+            @include inner();
       }
-}
 
-&__title {
-      font-size: 34px;
-      font-weight: bold;
-      color: #fff;
-}
+      &__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 150px;
 
-&__title::after {
-      content: "Council Information";
-      padding-top: 6px;
-      font-size: 20px;
-      display: block;
-}
+            img {
+                  position: absolute;
+                  width: 360px;
+                  right: 120px;
+                  bottom: -20px;
+            }
+      }
+
+      &__title {
+            font-size: 34px;
+            font-weight: bold;
+            color: #fff;
+      }
+
+      &__title::after {
+            content: "Council Information";
+            padding-top: 6px;
+            font-size: 20px;
+            display: block;
+      }
 }
 
 .council-firstView {
@@ -88,9 +99,18 @@ body {
       display: flex;
       margin-top: 20px;
 
+      li:first-child {
+            color: #989898;
+      }
+
       li:first-child::after {
             content: '>';
             padding: 0 16px;
+      }
+
+      li:first-child span:hover {
+            border-bottom: 2px solid #c5c5c5;
+            padding-bottom: 2px;
       }
 
 
@@ -212,6 +232,10 @@ body {
             border: 1px solid #fff;
             padding: 18px 30px;
             font-size: 20px;
+
+            &:hover {
+                  background-color: #fff;
+            }
       }
 }
 
