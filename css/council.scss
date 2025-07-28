@@ -19,6 +19,13 @@ $breakpoints: (
       margin-right: auto;
 }
 
+@mixin councilInner($w: 100%, $mw: 1140px) {
+      max-width: $mw;
+      width: $w;
+      margin-left: auto;
+      margin-right: auto;
+}
+
 @mixin flex($a: center, $b: space-between) {
       display: flex;
       justify-content: $b;
@@ -130,6 +137,10 @@ transition: all 0.6s ease-out;
       &__visual {
             margin-top: 100px;
       }
+
+      &__inner {
+            @include councilInner();
+      }
 }
 
 .council-voice__visual-group {
@@ -137,7 +148,7 @@ transition: all 0.6s ease-out;
       margin-left: -30px;
 
       &:first-child {
-            margin-top: -50px;
+            margin-top: -60px;
 
             .bubble {
                   margin-top: -280px;
@@ -159,20 +170,61 @@ transition: all 0.6s ease-out;
       right: 90px;
 }
 
+.council-voice__card-list,
+.council-voice__title,
+.council-voice__text {
+      max-width: 1200px; // card-listの幅に合わせて調整
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+}
+
+.council-voice__card {
+      position: relative;
+
+      &__text {
+            width: 100%;
+            padding: 0 10px;
+      }
+}
+
+.council-cardList {
+      gap: 80px;
+}
+
+.council-cardTitle {
+      position: absolute;
+      left: -10px;
+}
+
+.council-cardPicture {
+      width: 100%;
+}
 
 /*--- council-activities ---*/
 
 .council-activities {
       position: relative;
+
+      &__inner {
+            @include councilInner();
+      }
+
+      &__card__text {
+            width: 100%;
+            padding: 0 10px;
+      }
 }
 
 .council-activities__visual {
       position: absolute;
-      top: 580px;
+      top: 440px;
       right: 90px;
 }
 
 .council-activities__inner {
+      @include councilInner();
       margin-top: -180px;
 }
 
@@ -180,11 +232,20 @@ transition: all 0.6s ease-out;
 
 .council-foundation {
       position: relative;
+
+      &__inner {
+            @include councilInner();
+      }
+
+      &__card__text {
+            width: 100%;
+            padding: 0 10px;
+      }
 }
 
 .council-foundation__visual {
       position: absolute;
-      top: 400px;
+      top: 340px;
       right: 90px;
 }
 
