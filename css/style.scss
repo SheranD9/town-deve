@@ -352,6 +352,13 @@ body {
     &:hover {
       transform: translateY(-5px);
     }
+
+    &__detail {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 70px;
+    }
   }
   &__image {
     width: 100%;

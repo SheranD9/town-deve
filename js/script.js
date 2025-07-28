@@ -48,29 +48,35 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  //wether
-  document.addEventListener("DOMContentLoaded", () => {
-    const API_KEY = "145fc348fce54cfc84433152250906";
-    const location = "Uchidabashi";
-    const url = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&lang=ja`;
+  // Weather API
+  const API_KEY = "5050b88ea33d4f7ab6323530252807";
+  const location = "nagoya"; // Change this to your desired location
+  const url = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&lang=ja`;
 
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        const temp = data.current.temp_c;
-        const icon = "./images/cloudy.png";
-        // const icon = data.current.condition.icon;
-        const condition = data.current.condition.text;
+  fetch(url)
+    .then((res) => {
+      if (!res.ok) throw new Error("Network response was not ok");
+      return res.json();
+    })
+    .then((data) => {
+      console.log("Weather data:", data);
+      const temp = data.current.temp_c;
+      const icon = data.current.condition.icon;
+      const condition = data.current.condition.text;
 
-        // Update HTML
-        document.querySelector(".weather__icon img").src = icon;
-        document.querySelector(".weather__icon img").alt = condition;
-        document.querySelector(".weather__icon span").textContent = `${temp}°C`;
-      })
-      .catch((error) => {
-        console.error("Failed to fetch weather data:", error);
-      });
-  });
+      // Update HTML
+      const weatherImg = document.querySelector(".weather__icon img");
+      const weatherText = document.querySelector(".weather__icon span");
+
+      if (weatherImg && weatherText) {
+        weatherImg.src = `https:${icon}`;
+        weatherImg.alt = condition;
+        weatherText.textContent = `${temp}°C`;
+      }
+    })
+    .catch((error) => {
+      console.error("Failed to fetch weather data:", error);
+    });
 
   const cards = document.querySelectorAll(".sectionOne__card");
   if (cards.length >= 3) {
@@ -98,5 +104,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
-

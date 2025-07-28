@@ -311,6 +311,12 @@ body {
 .event__card:hover {
   transform: translateY(-5px);
 }
+.event__card__detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 70px;
+}
 .event__image {
   width: 100%;
   height: auto;
