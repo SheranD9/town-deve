@@ -232,9 +232,11 @@ body {
   border: 1px solid #fff;
   padding: 18px 30px;
   font-size: 20px;
+  transition: 0.3s;
 }
 .council-contact__btn:hover {
   background-color: #fff;
+  color: #fa4b06;
 }
 
 /*--- questions ---*/
