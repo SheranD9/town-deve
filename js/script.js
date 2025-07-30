@@ -104,3 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+// indexpage => firstviewのアニメーションのjs
+window.addEventListener("DOMContentLoaded", () => {
+  document.querySelector(".FirstView").classList.add("active");
+});
