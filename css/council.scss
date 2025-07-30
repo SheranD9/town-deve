@@ -136,6 +136,9 @@ transition: all 0.6s ease-out;
 
       &__visual {
             margin-top: 100px;
+            position: absolute;
+            top: -27%;
+            right: 6%;
       }
 
       &__inner {
@@ -151,23 +154,15 @@ transition: all 0.6s ease-out;
             margin-top: -60px;
 
             .bubble {
-                  margin-top: -280px;
+                  position: absolute;
+                  top: -20%;
+                  right: 8%;
             }
       }
 
       &:last-child {
             margin-top: -240px;
-
-            .bubble {
-                  margin-top: 200px;
-            }
       }
-}
-
-.council-voice__visual {
-      position: absolute;
-      top: -300px;
-      right: 90px;
 }
 
 .council-voice__card-list,
@@ -209,24 +204,21 @@ transition: all 0.6s ease-out;
 
       &__inner {
             @include councilInner();
+            margin-top: -180px;
       }
 
       &__card__text {
             width: 100%;
             padding: 0 10px;
       }
+
+      &__visual {
+            position: absolute;
+            top: 19%;
+            right: 90px;
+      }
 }
 
-.council-activities__visual {
-      position: absolute;
-      top: 440px;
-      right: 90px;
-}
-
-.council-activities__inner {
-      @include councilInner();
-      margin-top: -180px;
-}
 
 /*--- council-foundation ---*/
 

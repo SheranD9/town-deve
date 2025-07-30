@@ -84,6 +84,9 @@ body {
 }
 .council-voice__visual {
   margin-top: 100px;
+  position: absolute;
+  top: -27%;
+  right: 6%;
 }
 .council-voice__inner {
   max-width: 1140px;
@@ -100,19 +103,12 @@ body {
   margin-top: -60px;
 }
 .council-voice__visual-group:first-child .bubble {
-  margin-top: -280px;
+  position: absolute;
+  top: -20%;
+  right: 8%;
 }
 .council-voice__visual-group:last-child {
   margin-top: -240px;
-}
-.council-voice__visual-group:last-child .bubble {
-  margin-top: 200px;
-}
-
-.council-voice__visual {
-  position: absolute;
-  top: -300px;
-  right: 90px;
 }
 
 .council-voice__card-list,
@@ -155,24 +151,16 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -180px;
 }
 .council-activities__card__text {
   width: 100%;
   padding: 0 10px;
 }
-
 .council-activities__visual {
   position: absolute;
-  top: 440px;
+  top: 19%;
   right: 90px;
-}
-
-.council-activities__inner {
-  max-width: 1140px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -180px;
 }
 
 /*--- council-foundation ---*/
