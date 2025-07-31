@@ -135,10 +135,46 @@ transition: all 0.6s ease-out;
       margin-top: 0;
 
       &__visual {
+<<<<<<< HEAD
             margin-top: 100px;
             position: absolute;
             top: -27%;
             right: 6%;
+=======
+            &-group01 {
+                  position: absolute;
+                  top: -150px;
+                  right: 23%;
+
+                  .human {
+                        width: clamp(200px, 20vw, 360px);
+                  }
+
+                  .bubble {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        transform: translate(64%, -50%);
+                  }
+            }
+
+            &-group02 {
+                  position: absolute;
+                  top: -100px;
+                  right: 6%;
+
+                  .human {
+                        width: clamp(200px, 20vw, 360px);
+                  }
+
+                  .bubble {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        transform: translate(-64%, 0%);
+                  }
+            }
+>>>>>>> council
       }
 
       &__inner {
@@ -146,6 +182,7 @@ transition: all 0.6s ease-out;
       }
 }
 
+<<<<<<< HEAD
 .council-voice__visual-group {
       margin-top: -150px;
       margin-left: -30px;
@@ -165,6 +202,8 @@ transition: all 0.6s ease-out;
       }
 }
 
+=======
+>>>>>>> council
 .council-voice__card-list,
 .council-voice__title,
 .council-voice__text {
@@ -200,8 +239,6 @@ transition: all 0.6s ease-out;
 /*--- council-activities ---*/
 
 .council-activities {
-      position: relative;
-
       &__inner {
             @include councilInner();
             margin-top: -180px;
@@ -219,12 +256,41 @@ transition: all 0.6s ease-out;
       }
 }
 
+<<<<<<< HEAD
+=======
+.council-activities-wrapper {
+      position: relative;
+      margin-top: -13%;
+
+      .council-activities {
+            position: absolute;
+            top: 0;
+            right: 23%;
+
+            &__visual {
+                  position: absolute;
+                  top: -20%;
+                  right: 6%;
+
+                  .human {
+                        width: clamp(270px, 25vw, 480px);
+                        max-width: 100%;
+                  }
+
+                  .bubble {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        transform: translate(-100%, 80%);
+                  }
+            }
+      }
+}
+>>>>>>> council
 
 /*--- council-foundation ---*/
 
 .council-foundation {
-      position: relative;
-
       &__inner {
             @include councilInner();
       }
@@ -235,11 +301,29 @@ transition: all 0.6s ease-out;
       }
 }
 
-.council-foundation__visual {
-      position: absolute;
-      top: 340px;
-      right: 90px;
+.council-foundation-wrapper {
+      position: relative;
+      margin-top: 0;
+
+      .council-foundation__visual {
+            position: absolute;
+            top: -24%;
+            right: 6%;
+
+            .human {
+                  width: clamp(240px, 25vw, 400px);
+                  max-width: 100%;
+            }
+
+            .bubble {
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  transform: translate(-110%, 100%);
+            }
+      }
 }
+
 
 /*--- council-join-us ---*/
 .council-join-us {
