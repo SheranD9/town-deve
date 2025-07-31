@@ -137,13 +137,13 @@ body {
     position: absolute;
     top: 50%;
     right: -10%;
-    transform: translate(-60%, -39%);
+    transform: translate(-70%, -39%);
   }
   &__questionIcon {
     position: absolute;
     top: 40%;
     left: 21%;
-    transform: translate(-50%, -80%);
+    transform: translate(-95%, -70%);
   }
 
   &__eventIcon,
@@ -163,7 +163,7 @@ body {
     }
     .FirstView__questionIcon {
       opacity: 1;
-      transform: translate(-50%, -80%) translateY(0);
+      transform: translate(-95%, -67%) translateY(0);
 
       &:hover {
         animation: shake-question 0.5s;
@@ -1537,6 +1537,145 @@ main {
         text-decoration: underline;
         font-size: 14px;
       }
+    }
+  }
+}
+///////tourism section
+
+.tourism {
+  background-color: #fff7dd;
+  padding: 60px 20px;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 30px;
+    .tourism__title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .tourism__subtitle {
+      font-size: 16px;
+      color: #333;
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  &__sidebar {
+    flex: 1 1 200px;
+    border: 1px dashed #333;
+    border-radius: 12px;
+    padding: 20px;
+    background: #fff;
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+
+      button {
+        background: none;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+
+        &.active {
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__list {
+    flex: 1 1 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  &__img {
+    flex: 0 0 200px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .card__tag {
+      display: inline-block;
+      background: #fa4b06;
+      color: white;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    .card__title {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .card__desc {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .card__link {
+      font-size: 13px;
+      color: #000;
+    }
+  }
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 30px;
+
+  button {
+    background: none;
+    border: 1px solid #fa4b06;
+    color: #fa4b06;
+    margin: 0 5px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &.active {
+      background: #fa4b06;
+      color: white;
     }
   }
 }
