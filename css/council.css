@@ -82,37 +82,39 @@ body {
   position: relative;
   margin-top: 0;
 }
-.council-voice__visual {
-  margin-top: 100px;
+.council-voice__visual-group01 {
+  position: absolute;
+  top: -150px;
+  right: 23%;
+}
+.council-voice__visual-group01 .human {
+  width: clamp(200px, 20vw, 360px);
+}
+.council-voice__visual-group01 .bubble {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(64%, -50%);
+}
+.council-voice__visual-group02 {
+  position: absolute;
+  top: -100px;
+  right: 6%;
+}
+.council-voice__visual-group02 .human {
+  width: clamp(200px, 20vw, 360px);
+}
+.council-voice__visual-group02 .bubble {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-64%, 0%);
 }
 .council-voice__inner {
   max-width: 1140px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.council-voice__visual-group {
-  margin-top: -150px;
-  margin-left: -30px;
-}
-.council-voice__visual-group:first-child {
-  margin-top: -60px;
-}
-.council-voice__visual-group:first-child .bubble {
-  margin-top: -280px;
-}
-.council-voice__visual-group:last-child {
-  margin-top: -240px;
-}
-.council-voice__visual-group:last-child .bubble {
-  margin-top: 200px;
-}
-
-.council-voice__visual {
-  position: absolute;
-  top: -300px;
-  right: 90px;
 }
 
 .council-voice__card-list,
@@ -147,9 +149,6 @@ body {
 }
 
 /*--- council-activities ---*/
-.council-activities {
-  position: relative;
-}
 .council-activities__inner {
   max-width: 1140px;
   width: 100%;
@@ -161,24 +160,32 @@ body {
   padding: 0 10px;
 }
 
-.council-activities__visual {
-  position: absolute;
-  top: 440px;
-  right: 90px;
+.council-activities-wrapper {
+  position: relative;
+  margin-top: -13%;
 }
-
-.council-activities__inner {
-  max-width: 1140px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -180px;
+.council-activities-wrapper .council-activities {
+  position: absolute;
+  top: 0;
+  right: 23%;
+}
+.council-activities-wrapper .council-activities__visual {
+  position: absolute;
+  top: -20%;
+  right: 6%;
+}
+.council-activities-wrapper .council-activities__visual .human {
+  width: clamp(270px, 25vw, 480px);
+  max-width: 100%;
+}
+.council-activities-wrapper .council-activities__visual .bubble {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 80%);
 }
 
 /*--- council-foundation ---*/
-.council-foundation {
-  position: relative;
-}
 .council-foundation__inner {
   max-width: 1140px;
   width: 100%;
@@ -190,10 +197,24 @@ body {
   padding: 0 10px;
 }
 
-.council-foundation__visual {
+.council-foundation-wrapper {
+  position: relative;
+  margin-top: 0;
+}
+.council-foundation-wrapper .council-foundation__visual {
   position: absolute;
-  top: 340px;
-  right: 90px;
+  top: -24%;
+  right: 6%;
+}
+.council-foundation-wrapper .council-foundation__visual .human {
+  width: clamp(240px, 25vw, 400px);
+  max-width: 100%;
+}
+.council-foundation-wrapper .council-foundation__visual .bubble {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-110%, 100%);
 }
 
 /*--- council-join-us ---*/
