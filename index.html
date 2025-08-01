@@ -58,13 +58,18 @@
         />
 
         <div class="FirstView__inner">
-          <img
-            src="./images/indexTopQuestionIcon.svg"
-            alt="よくある質問"
-            class="FirstView__questionIcon"
-          />
-          <img src="./images/indexTopEventIcon.svg" alt="イベント"
-          class="FirstView__eventIcon""/>
+          <a href="#faq">
+            <img
+              src="./images/indexTopQuestionIcon.svg"
+              alt="よくある質問"
+              class="FirstView__questionIcon"
+            />
+          </a>
+          <a href="event.html">
+            <img src="./images/indexTopEventIcon.svg" alt="イベント"
+            class="FirstView__eventIcon""/>
+          </a>
+
           <div class="FirstView__title">
             <img src="./images/logo.svg" alt="logo" />
           </div>
@@ -75,6 +80,7 @@
             <p>本日の内田橋のお天気</p>
             <div class="weather__icon">
               <img src="" alt="weather icon" />
+              <br />
               <span>--°C</span>
             </div>
           </div>
@@ -101,7 +107,7 @@
 
       <section class="sectionOne" id="sectionOne">
         <div class="sectionOne__inner">
-          <a href="faq.html" class="sectionOne__faqBtn">よくある 質問</a>
+          <a href="#faq" class="sectionOne__faqBtn">よくある 質問</a>
 
           <div class="sectionOne__list">
             <!-- Card 1 -->
@@ -298,7 +304,7 @@
         </div>
       </section>
 
-      <section class="faq">
+      <section class="faq" id="faq">
         <div class="faq__inner">
           <h2 class="faq__heading">よくある質問</h2>
           <p class="faq__subheading">question</p>

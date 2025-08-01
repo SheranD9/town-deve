@@ -1,5 +1,10 @@
 body {
   background-color: #fffae2;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .header {
@@ -85,7 +90,7 @@ body {
   top: 0px;
   right: 0px;
   background-color: rgba(255, 255, 255, 0.8);
-  color: #000000;
+  color: #fa4b06;
   padding: 30px;
   border-radius: 30px 0 0 30px;
   z-index: 2;
@@ -119,8 +124,9 @@ body {
   transform: translate(-60%, -39%) translateY(0);
 }
 .FirstView.active .FirstView__eventIcon:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
+  transform: translate(-60%, -39%) scale(1.1);
+  -webkit-animation: shake-event 0.5s;
+          animation: shake-event 0.5s;
 }
 .FirstView.active .FirstView__questionIcon {
   opacity: 1;
@@ -129,6 +135,7 @@ body {
 .FirstView.active .FirstView__questionIcon:hover {
   -webkit-animation: shake-question 0.5s;
           animation: shake-question 0.5s;
+  transform: translate(-95%, -67%) scale(1.1);
 }
 
 .scroll-indicator {
@@ -186,6 +193,7 @@ body {
 }
 main {
   margin-top: 20px;
+  min-width: 0;
 }
 
 .sectionOne {
@@ -1460,5 +1468,267 @@ main {
 .pagination button.active {
   background: #fa4b06;
   color: white;
+}
+
+.firework {
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--fw-color, #fa4b06) 70%, #fff 100%);
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: 0 0 16px 4px var(--fw-color, #fa4b06), 0 0 32px 8px #fff;
+  -webkit-animation: firework-explode 1.2s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+          animation: firework-explode 1.2s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+}
+
+@-webkit-keyframes firework-explode {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+    filter: blur(0);
+  }
+  70% {
+    opacity: 1;
+    transform: rotate(var(--angle)) translate(var(--distance), 0) scale(1.3);
+    filter: blur(0.5px);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(var(--angle)) translate(var(--distance), 0) scale(0.7);
+    filter: blur(2px);
+  }
+}
+
+@keyframes firework-explode {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+    filter: blur(0);
+  }
+  70% {
+    opacity: 1;
+    transform: rotate(var(--angle)) translate(var(--distance), 0) scale(1.3);
+    filter: blur(0.5px);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(var(--angle)) translate(var(--distance), 0) scale(0.7);
+    filter: blur(2px);
+  }
+}
+.question-mark {
+  position: fixed;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fa4b06;
+  pointer-events: none;
+  z-index: 9999;
+  -webkit-animation: question-mark-explode 1s forwards;
+          animation: question-mark-explode 1s forwards;
+  filter: drop-shadow(0 0 6px #fff);
+}
+
+@-webkit-keyframes question-mark-explode {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: rotate(var(--angle)) translate(var(--distance), 0) scale(1.3);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(var(--angle)) translate(var(--distance), 0) scale(0.7);
+  }
+}
+
+@keyframes question-mark-explode {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: rotate(var(--angle)) translate(var(--distance), 0) scale(1.3);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(var(--angle)) translate(var(--distance), 0) scale(0.7);
+  }
+}
+@media (max-width: 1280px) {
+  .FirstView__vector {
+    width: 100vw;
+    max-width: 100vw;
+  }
+  .event__card-container,
+.activities__inner,
+.council-firstView__inner,
+.council-voice__inner,
+.council-activities__inner,
+.council-foundation__inner,
+.faq__inner,
+.news__inner,
+.gallery___inner,
+.tourism__container {
+    max-width: 98vw;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+@media (max-width: 900px) {
+  .FirstView__title,
+.FirstView__text {
+    font-size: 1.5rem;
+    top: 120px;
+  }
+  .FirstView__weather {
+    width: 160px;
+    font-size: 13px;
+    padding: 16px;
+  }
+  .sectionOne__list {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .sectionOne__card {
+    max-width: 100%;
+    min-width: 0;
+    border-right: none;
+    border-bottom: 2px solid #000;
+    padding-bottom: 20px;
+  }
+  .event__cardlist,
+.activities__list {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .event__card {
+    max-width: 100%;
+    height: auto;
+  }
+  .gallery__item {
+    width: 50%;
+  }
+  .council-voice__card-list,
+.council-activities__card-list,
+.council-foundation__card-list {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .card__detail {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .tourism__container {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .FirstView {
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 40px;
+  }
+  .FirstView__title,
+.FirstView__text {
+    font-size: 1.1rem;
+    top: 80px;
+  }
+  .FirstView__weather {
+    width: 120px;
+    font-size: 11px;
+    padding: 10px;
+  }
+  .sectionOne {
+    padding: 20px 6px;
+  }
+  .sectionOne__inner {
+    margin-top: 40px;
+    padding: 0 6px;
+  }
+  .event {
+    padding: 20px 6px;
+  }
+  .event__header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  .event__cardlist,
+.activities__list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-top: 16px;
+  }
+  .event__card {
+    max-width: 100%;
+    height: auto;
+    font-size: 14px;
+    padding: 8px;
+  }
+  .gallery__item {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .faq {
+    padding: 30px 6px;
+  }
+  .faq__inner {
+    padding: 0 6px;
+  }
+  .news {
+    padding: 20px 6px;
+  }
+  .news__header {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+  .footer__columns {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__bottom {
+    padding: 120px 0 30px;
+  }
+  .footer__copy {
+    font-size: 12px;
+  }
+  .council-firstView__title__text,
+.council-voice__title,
+.council-activities__title,
+.council-foundation__title {
+    font-size: 18px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  .council-voice__card__text,
+.council-activities__card__text,
+.council-foundation__card__text {
+    width: 100%;
+    padding: 0 6px;
+  }
+  .council-join-us__inner {
+    padding: 20px 0;
+  }
+  .council-join-us__text {
+    font-size: 16px;
+    margin: 30px 0;
+    padding: 10px;
+  }
+  .scroll-indicator {
+    display: none;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 /*# sourceMappingURL=style.css.map */
